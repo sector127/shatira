@@ -6,7 +6,7 @@ import Nav from "@/components/ui/Nav";
 export const metadata = {
   title: "Shatira is Dev",
   description:
-    "This is my personal portfolio, I'm web developer from Tbilisi, Georgia",
+    "👨‍💻 Passionate Frontend Developer | JavaScript & React Expert | Full-Stack Proficiency with Node.js & MongoDB | Experienced in Next.js | Agile & Collaborative",
 };
 
 export default function RootLayout({ children }) {
