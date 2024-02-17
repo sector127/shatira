@@ -46,7 +46,7 @@ export const tabContents = {
     </div>
   ),
   "skills.json": (
-    <div className="mx-3 w-auto">
+    <div className="mx-3">
       <p className="italic text-gray-700">{`// My skill set`}</p>
       <p className="text-blue-300 text-sm">{"["}</p>
       {techStack.map((skill) => {

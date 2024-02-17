@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { anton } from "@/lib/fonts";
-import { ReceiptText } from "lucide-react";
+import { ClipboardCheck, ReceiptText } from "lucide-react";
 import Link from "next/link";
 
 const Hero = () => {
@@ -34,9 +34,9 @@ const Hero = () => {
           From 📍 Tbilisi, Georgia
         </h2>
         <Link href="#contact">
-          <Button className="w-36 rounded-2xl transition-all ease-in-out duration-1000 active:translate-y-1 hover:shadow-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+          <Button className="w-36 rounded-2xl transition-all ease-in-out duration-1000 hover:-translate-y-1 hover:shadow-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
             HIRE ME!
-            <ReceiptText className="ml-2 h-5 w-5" />
+            <ClipboardCheck className="ml-2 h-5 w-5" />
           </Button>
         </Link>
       </motion.div>

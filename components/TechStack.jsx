@@ -31,7 +31,7 @@ const TechStack = () => {
     triggerOnce: true, // Ensures the animation is triggered only once
   });
   return (
-    <div className="w-[300px]">
+    <div className="w-1/3">
       <div ref={ref}>
         <motion.div
           className="flex flex-col"
