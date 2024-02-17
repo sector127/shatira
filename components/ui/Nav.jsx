@@ -36,7 +36,7 @@ const Nav = () => {
   return (
     <div className="flex items-center w-full justify-center mb-20">
       <nav
-        className={`flex fixed top-0 justify-between items-center w-screen max-w-screen-2xl p-8 lg:p-2 text-white z-20 transition-all duration-700 ease-in-out ${
+        className={`flex fixed top-0 justify-between items-center w-screen max-w-screen-xl p-8 lg:p-2 text-white z-20 transition-all duration-700 ease-in-out ${
           scrolled
             ? "bg-shatira bg-opacity-40 border-r border-b border-l border-slate-900 shadow-md rounded-b-lg"
             : "bg-opacity-0 border-transparent"

@@ -26,7 +26,7 @@ const Hero = () => {
         viewport={{ once: true }}
         className={`justify-center flex flex-col items-center hero__dsc ${anton.className}`}
       >
-        <h1 className="mb-4 text-white text-4xl lg:text-7xl drop-shadow-2xl">
+        <h1 className="mb-4 text-white text-4xl lg:text-6xl drop-shadow-2xl">
           I am Web Developer
         </h1>
         <br />

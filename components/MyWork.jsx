@@ -62,7 +62,7 @@ const MyWork = () => {
           )}
         </div>
       </div>
-      <div className="flex flex-wrap gap-8">
+      <div className="flex flex-wrap gap-8 justify-between">
         {projects.map((project) => (
           <WorkCard
             name={project.name}

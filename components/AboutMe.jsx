@@ -12,7 +12,7 @@ const AboutMe = () => {
   return (
     <div
       id="about"
-      className={`text-white w-[300px] md:w-[768px] max-h-[500px] ${inconsolata.className} relative`}
+      className={`text-white w-[300px] md:w-2/3 max-h-[500px] ${inconsolata.className} relative`}
     >
       <div className="bg-gray-900 rounded-sm shadow-2xl container max-h-[500px] px-0 mx-auto border border-slate-700 hero__image">
         <div className="flex items-center justify-between border-b border-gray-950">

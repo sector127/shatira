@@ -7,7 +7,7 @@ const Me = () => {
   return (
     <>
       <SectionHead title="About Me" />
-      <div className="flex flex-row flex-wrap max-w-screen-2xl justify-center md:gap-20">
+      <div className="flex flex-row flex-wrap max-w-screen-2xl justify-between md:gap-20">
         <AboutMe />
         <TechStack />
       </div>

@@ -9,7 +9,7 @@ import Me from "@/components/Me";
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center p-10 text-white ${anton.className}`}
+      className={`flex min-h-screen max-w-screen-xl mx-auto flex-col items-center p-10 text-white ${anton.className}`}
     >
       <SocialLinks
         linkedin="https://www.linkedin.com/in/giorgi-shatirishvili-ba5224151/"
@@ -20,13 +20,10 @@ export default function Home() {
       <section id="hero">
         <Hero />
       </section>
-      <section id="about" className="flex flex-col flex-nowrap max-w-[1440px]">
+      <section id="about" className="flex flex-col flex-nowrap">
         <Me />
       </section>
-      <section
-        id="portfolio"
-        className="flex flex-col flex-nowrap min-h-dvh max-w-[1440px]"
-      >
+      <section id="portfolio" className="flex flex-col flex-nowrap min-h-dvh">
         <MyWork />
       </section>
       <section id="contact" className="flex min-h-dvh justify-center w-full">

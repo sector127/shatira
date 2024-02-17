@@ -15,7 +15,7 @@ import Link from "next/link";
 const WorkCard = (props) => {
   return (
     <Card
-      className={`relative max-w-md mx-auto max-h-60 bg-slate-950 bg-opacity-10 rounded-sm border-slate-900 flex flex-row justify-between transition-all duration-300 hover:-translate-y-0.5 ${
+      className={`relative w-auto md:max-w-lg max-h-60 bg-slate-950 bg-opacity-10 rounded-sm border-slate-900 flex flex-row justify-between transition-all duration-300 hover:-translate-y-0.5 ${
         props.dimmed ? "opacity-10" : ""
       }`}
     >

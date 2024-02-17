@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="bg-slate-950 bg-opacity-10 border-t border-slate-900 text-white">
       <div className="container mx-auto flex flex-row items-center justify-center md:gap-40">
         {/* Social */}
-        <ul className="flex flex-col items-start py-10">
+        <ul className="flex flex-col items-start py-5">
           <Button variant="link" className="text-white">
             <Link href="https://github.com/sector127">GitHub</Link>
           </Button>
@@ -34,7 +34,7 @@ const Footer = () => {
         </ul>
 
         {/* Menu */}
-        <ul className="flex flex-col items-start py-10">
+        <ul className="flex flex-col items-start py-5">
           <Button variant="link" className="text-white">
             <Link href="#about">About</Link>
           </Button>
@@ -49,7 +49,7 @@ const Footer = () => {
           </Button>
         </ul>
       </div>
-      <div className="flex items-center justify-center gap-2 max-w-screen-sm mx-auto pb-10">
+      <div className="flex items-center justify-center gap-2 max-w-screen-sm mx-auto pb-5">
         <Image
           src="/assets/images/b-w_logo-sm.png"
           alt="shatira-logo"
