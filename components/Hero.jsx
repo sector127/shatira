@@ -27,7 +27,7 @@ const Hero = () => {
         className={`justify-center flex flex-col items-center hero__dsc ${anton.className}`}
       >
         <h1 className="mb-4 text-white text-4xl lg:text-6xl drop-shadow-2xl">
-          I am Web Developer
+          I{"'"}m a Web Developer
         </h1>
         <br />
         <h2 className="mb-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-base lg:text-3xl text-transparent">
