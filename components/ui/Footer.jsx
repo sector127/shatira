@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-slate-950 bg-opacity-10 border-t border-slate-900 text-white">
-      <div className="container mx-auto flex flex-row items-center justify-center md:gap-40">
+      <div className="container mx-auto flex flex-row items-center justify-between md:justify-evenly">
         {/* Social */}
         <ul className="flex flex-col items-start py-5">
           <Button variant="link" className="text-white">
