@@ -1,0 +1,29 @@
+/* styles/blog.module.css */
+.blogPage{
+    color: #fff;
+}
+
+.blogContainer {
+    padding: 20px;
+    color: white;
+}
+
+.postList {
+    list-style: none;
+    padding: 0;
+}
+
+.postItem {
+    margin-bottom: 20px;
+}
+
+.postLink {
+    font-size: 18px;
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.postDate {
+    font-size: 14px;
+    color: #555;
+}

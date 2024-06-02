@@ -8,23 +8,23 @@ const Menu = () => {
     <div className={` ${poppins.className}`}>
       <ul className="flex">
         <li>
-          <Link href="#about">
+          <Link href="/#about">
             <Button variant="ghost">About me</Button>
           </Link>
         </li>
         <li>
-          <Link href="#portfolio">
+          <Link href="/#portfolio">
             <Button variant="ghost">Portfolio</Button>
           </Link>
         </li>
         <li>
-          <Link href="#contact">
+          <Link href="/#contact">
             <Button variant="ghost">Contact</Button>
           </Link>
         </li>
-        <li>
+        <Link href={'/blog'}>
           <Button variant="ghost">Blog</Button>
-        </li>
+        </Link>
       </ul>
     </div>
   );

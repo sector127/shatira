@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import { anton } from "../lib/fonts";
+import { anton } from "@/lib/fonts";
 import ContactForm from "@/components/ContactForm";
 import MyWork from "@/components/MyWork";
 import BackToTopButton from "@/components/ui/BackToTopButton";
