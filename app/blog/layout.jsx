@@ -1,10 +1,14 @@
 import SectionHead from "@/components/ui/SectionHead";
+import {Suspense} from "react";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
 
 export default function BlogLayout({ children }) {
     return (
         <div>
-            <SectionHead title="Blog" />
-            {children}
+            <Suspense fallback={<LoadingSpinner/>}>
+                <SectionHead title="Blog" />
+                {children}
+            </Suspense>
         </div>
     );
 }
