@@ -30,9 +30,9 @@ const Hero = () => {
                     I{"'"}m a Web Developer
                 </h1>
                 <h2 className="mb-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-base lg:text-3xl">
-                    From 📍 Tbilisi, Georgia
+                    From Tbilisi, Georgia
                 </h2>
-                <Link href="#contact">
+                <Link href="/#contact">
                     <Button className={`w-36 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition-all duration-1000 ease-in-out hover:-translate-y-1 hover:shadow-md ${poppins.className}`}>
                         HIRE ME!
                         <ClipboardCheck className="ml-2 h-5 w-5" />

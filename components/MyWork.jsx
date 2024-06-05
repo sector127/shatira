@@ -34,7 +34,7 @@ const MyWork = () => {
         <div className="container mx-auto p-4">
             <SectionHead title="My Work" />
             <div className="my-6">
-                <p className="text-lg font-semibold">Filter by Tags:</p>
+                <p className="text-lg">Filter by Tags:</p>
                 <div className="flex flex-wrap gap-2 mt-2">
                     {Array.from(new Set(projects.flatMap((project) => project.tags))).map(
                         (tag) => (
@@ -62,7 +62,7 @@ const MyWork = () => {
                     )}
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative work__card">
                 {filteredProjects.map((project) => (
                     <WorkCard
                         name={project.name}

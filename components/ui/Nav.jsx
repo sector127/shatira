@@ -118,22 +118,24 @@ const Nav = () => {
         <div className="lg:hidden fixed top-0 left-0 w-screen h-screen bg-shatira bg-opacity-80 z-10 text-white animate-burgerSlideIn">
           <ul className="flex flex-col items-center justify-center h-full">
             <li>
-              <Link href="#about" onClick={closeMenu}>
+              <Link href="/#about" onClick={closeMenu}>
                 <Button variant="ghost">About me</Button>
               </Link>
             </li>
             <li>
-              <Link href="#portfolio" onClick={closeMenu}>
+              <Link href="/#portfolio" onClick={closeMenu}>
                 <Button variant="ghost">Portfolio</Button>
               </Link>
             </li>
             <li>
-              <Link href="#contact" onClick={closeMenu}>
+              <Link href="/#contact" onClick={closeMenu}>
                 <Button variant="ghost">Contact</Button>
               </Link>
             </li>
             <li>
-              <Button variant="ghost">Blog</Button>
+              <Link href={"/blog"} onClick={closeMenu}>
+                <Button variant="ghost">Blog</Button>
+              </Link>
             </li>
           </ul>
         </div>

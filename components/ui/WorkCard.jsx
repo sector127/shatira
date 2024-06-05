@@ -15,7 +15,7 @@ import Link from "next/link";
 const WorkCard = (props) => {
   return (
       <Card
-          className={`relative w-full md:w-auto bg-slate-900 bg-opacity-10 rounded-lg border-slate-800 overflow-hidden transition-all duration-300 hover:-translate-y-1 ${
+          className={`relative w-full md:w-auto bg-slate-900 rounded-lg border-slate-800 overflow-hidden transition-all duration-300 hover:-translate-y-1 ${
               props.dimmed ? "opacity-50" : ""
           }`}
       >
@@ -23,15 +23,16 @@ const WorkCard = (props) => {
           <Image
               src={props.image}
               alt={props.name}
-              layout="fill"
-              objectFit="cover"
+              width={300}
+              height={200}
+              style={{objectFit: "cover"}}
               className="object-cover w-full h-full"
           />
         </div>
         <div className="flex flex-col justify-between p-4">
           <div>
             <CardHeader className="pb-2">
-              <CardTitle className="text-white text-xl font-extralight">
+              <CardTitle className="text-white text-xl tracking-wide font-extralight">
                 {props.name}
               </CardTitle>
               <CardDescription className="text-gray-300 text-sm">

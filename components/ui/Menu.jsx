@@ -5,25 +5,25 @@ import Link from "next/link";
 
 const Menu = () => {
   return (
-    <div className={` ${poppins.className}`}>
+    <div className={`${poppins.className}`}>
       <ul className="flex">
         <li>
           <Link href="/#about">
-            <Button variant="ghost">About me</Button>
+            <Button className="font-bold" variant="ghost">About me</Button>
           </Link>
         </li>
         <li>
           <Link href="/#portfolio">
-            <Button variant="ghost">Portfolio</Button>
+            <Button className="font-bold" variant="ghost">Portfolio</Button>
           </Link>
         </li>
         <li>
           <Link href="/#contact">
-            <Button variant="ghost">Contact</Button>
+            <Button className="font-bold" variant="ghost">Contact</Button>
           </Link>
         </li>
         <Link href={'/blog'}>
-          <Button variant="ghost">Blog</Button>
+          <Button className="font-bold" variant="ghost">Blog</Button>
         </Link>
       </ul>
     </div>
