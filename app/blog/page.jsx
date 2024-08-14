@@ -16,7 +16,8 @@ const BlogPage = () => {
             const response = await fetch('/api/posts');
             if (response.ok) {
                 const data = await response.json();
-                setPosts(data);
+                const sortedPosts = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+                setPosts(sortedPosts);
             } else {
                 setError('Failed to fetch posts');
             }
@@ -65,7 +66,7 @@ const BlogPage = () => {
     };
 
     return (
-        <div className="max-w-4xl mx-auto p-4 bg-white">
+        <div className="max-w-4xl min-h-screen mx-auto p-4 bg-white">
             <div className="flex flex-col md:flex-row gap-8">
                 <div className="w-full md:w-1/4">
                     <TagsList onTagClick={handleTagClick} />
@@ -100,8 +101,11 @@ const BlogPage = () => {
                                         </div>
                                         <div className="flex flex-col flex-1">
                                             <h3 className="text-2xl font-bold mb-2">{post.title}</h3>
-                                            <p className="text-gray-700 mb-4">{truncateContent(post.content, 30)}</p>
-                                            <Link href={`/blog/${post._id}`}>
+                                            <div
+                                                className="text-gray-700 mb-4"
+                                                dangerouslySetInnerHTML={{ __html: truncateContent(post.content, 30) }}
+                                            />
+                                            <Link href={`/blog/${post.slug}`}>
                                                 <button className="text-blue-500 font-medium">Read more</button>
                                             </Link>
                                             <div className="flex flex-wrap gap-2 mt-4">

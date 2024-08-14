@@ -9,6 +9,7 @@ const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
 export default function NewPost() {
     const [title, setTitle] = useState('');
+    const [image, setImage] = useState('');
     const [content, setContent] = useState('');
     const [tags, setTags] = useState('');
     const [error, setError] = useState('');
@@ -31,18 +32,25 @@ export default function NewPost() {
         setError('');
         setSuccess('');
 
+
         try {
             const response = await fetch('/api/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ title, content, tags: tags.split(',').map(tag => tag.trim()) }),
+                body: JSON.stringify({
+                    title,
+                    image,
+                    content,
+                    tags: tags.split(',').map(tag => tag.trim()),
+                }),
             });
 
             if (response.ok) {
                 setSuccess('Post created successfully!');
                 setTitle('');
+                setImage('')
                 setContent('');
                 setTags('');
             } else {
@@ -67,6 +75,14 @@ export default function NewPost() {
                     required
                     className="p-2 border border-gray-300 rounded"
                 />
+                <input
+                    type="text"
+                    placeholder="Image Src"
+                    value={image}
+                    onChange={(e) => setImage(e.target.value)}
+                    required
+                    className="p-2 border border-gray-300 rounded"
+                />
                 <ReactQuill
                     value={content}
                     onChange={setContent}
@@ -74,12 +90,12 @@ export default function NewPost() {
                     theme="snow"
                     modules={{
                         toolbar: [
-                            [{ 'header': '1' }, { 'header': '2' }, { 'font': [] }],
-                            [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+                            [{'header': '1'}, {'header': '2'}, {'font': []}],
+                            [{'list': 'ordered'}, {'list': 'bullet'}],
                             ['bold', 'italic', 'underline'],
                             ['link', 'image'],
-                            [{ 'align': [] }],
-                            [{ 'color': [] }, { 'background': [] }],
+                            [{'align': []}],
+                            [{'color': []}, {'background': []}],
                             ['clean']
                         ]
                     }}

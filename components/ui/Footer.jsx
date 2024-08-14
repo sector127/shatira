@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Button } from "./button";
 import Link from "next/link";
-import { Separator } from "./separator";
 
 const Footer = () => {
-  // Get current year
   const currentYear = new Date().getFullYear();
 
   return (
@@ -36,13 +33,13 @@ const Footer = () => {
         {/* Menu */}
         <ul className="flex flex-col items-start py-5">
           <Button variant="link" className="text-white">
-            <Link href="#about">About</Link>
+            <Link href="/#about">About</Link>
           </Button>
           <Button variant="link" className="text-white">
-            <Link href="#portfolio">Portfolio</Link>
+            <Link href="/#portfolio">Portfolio</Link>
           </Button>
           <Button variant="link" className="text-white">
-            <Link href="#contact">Contact</Link>
+            <Link href="/#contact">Contact</Link>
           </Button>
           <Button variant="link" className="text-white">
             <Link href="#">Blog</Link>

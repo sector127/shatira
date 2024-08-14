@@ -7,8 +7,8 @@ export async function POST(req) {
         await connectToDatabase();
         console.log('Connected to database');
 
-        const { title, content, tags } = await req.json();
-        console.log('Request body:', { title, content, tags });
+        const { title,image, content, tags } = await req.json();
+        console.log('Request body:', { title, image, content, tags });
 
         if (!title || !content) {
             console.error('Validation Error: Title and content are required');
@@ -16,7 +16,7 @@ export async function POST(req) {
         }
 
         try {
-            const newPost = new Post({ title, content, tags });
+            const newPost = new Post({ title, image, content, tags });
             await newPost.save();
             console.log('Post created:', newPost);
             return NextResponse.json(newPost, { status: 201 });
