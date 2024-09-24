@@ -40,10 +40,10 @@ const MyWork = () => {
                         (tag) => (
                             <Button
                                 key={tag}
-                                className={`px-4 py-2 rounded-full transition-colors duration-300 ${
+                                className={`px-4 py-2 rounded-xl transition-colors duration-300 ${
                                     selectedTags.includes(tag)
                                         ? "bg-blue-600 text-white"
-                                        : "bg-gray-200 text-gray-800"
+                                        : "bg-gray-800 text-gray-100"
                                 }`}
                                 onClick={() => handleTagClick(tag)}
                             >
@@ -54,7 +54,7 @@ const MyWork = () => {
                     {selectedTags.length > 0 && (
                         <Button
                             variant="outline"
-                            className="text-black flex items-center px-4 py-2 rounded-full bg-red-200 text-red-800"
+                            className="flex items-center px-4 py-2 rounded-full bg-red-200 text-red-800"
                             onClick={clearFilters}
                         >
                             Clear <XCircle className="ml-2" size={16} />

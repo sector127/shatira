@@ -30,7 +30,6 @@ const Nav = () => {
 
   const closeMenu = () => {
     setMenuOpen(false);
-    console.log("close");
   };
 
   return (
