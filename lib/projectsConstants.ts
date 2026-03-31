@@ -1,0 +1,77 @@
+export interface Project {
+  name: string;
+  description: string;
+  image: string;
+  live: string;
+  repo: string;
+  tags: string[];
+}
+
+export const projects: Project[] = [
+  {
+    name: "Natours App",
+    description:
+      "Udemy Back-end development course project, using NodeJS and MongoDB",
+    image: "/assets/images/projects/natours.png",
+    live: "https://natours-p99g.onrender.com/",
+    repo: "https://github.com/sector127/natours",
+    tags: ["nodejs", "express", "mongodb", "mongoose"],
+  },
+  {
+    name: "Portfolio - Personal portfolio page",
+    description: "My personal portfolio page using latest tools!",
+    image: "/assets/images/projects/portfolio.png",
+    live: "https://shatira.dev/",
+    repo: "https://github.com/sector127/shatira",
+    tags: ["react", "nextjs", "tailwind"],
+  },
+  {
+    name: "Kountriez",
+    description: "React course final project using real API",
+    image: "/assets/images/projects/kountriez.png",
+    live: "https://kountriez.netlify.app/",
+    repo: "https://github.com/sector127/react-final",
+    tags: ["react"],
+  },
+  {
+    name: "Jeka.ge",
+    description: "Simple static HTML CSS Javascript website",
+    image: "/assets/images/projects/jeka.png",
+    live: "https://sector127.github.io/jeka.ge/",
+    repo: "https://github.com/sector127/jeka.ge",
+    tags: ["html", "css", "javascript"],
+  },
+  {
+    name: "Game - Connect Four",
+    description: "Mini multiplayer game - Frontend mentor challenge",
+    image: "/assets/images/projects/connect_four.png",
+    live: "https://sector127.github.io/connect-four-game/",
+    repo: "https://github.com/sector127/connect-four-game",
+    tags: ["html", "css", "javascript", "game"],
+  },
+  {
+    name: "Game - Rock, Paper, Scissors",
+    description:
+      "It's old - gold Rock, Paper, Scissors game, written with Vanilla JavaScript",
+    image: "/assets/images/projects/rock_scissors_paper.png",
+    live: "https://sector127.github.io/rock-paper-scissors/",
+    repo: "https://github.com/sector127/rock-paper-scissors",
+    tags: ["html", "css", "javascript", "game"],
+  },
+  {
+    name: "Online shopping website",
+    description: "Small online shopping website",
+    image: "/assets/images/projects/shop.png",
+    live: "#",
+    repo: "https://github.com/sector127/shop",
+    tags: ["html", "css", "graphql", "redux-toolkit", "react"],
+  },
+  {
+    name: "Alias game website",
+    description: "Alias mobile game website",
+    image: "/assets/images/projects/alias.png",
+    live: "https://alias-game-six.vercel.app",
+    repo: "https://github.com/sector127/alias-game",
+    tags: ["html", "css", "nextjs", "tailwind", "react", "game"],
+  },
+];
